@@ -1,0 +1,268 @@
+body{
+    transition: 0.1s;
+    background-color: #FFE8E8;
+    margin: 0px 25vw 0px 25vw;
+}
+.minute{
+    position: relative;
+    top: 20vh;
+    font-size: 100%;
+    margin-bottom: 10vh;
+}
+
+
+@media all and (min-width: 551px){
+    .box{
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 50vw;
+        top: 40vh;
+        font-size: 120%;
+    }
+    .sakusei{
+        transition: 0.3s;
+        position: fixed;
+        display: inline;
+        padding: 20px 20px;
+        background-color: #fff;
+        border-radius: 50px;
+        margin-inline-start: -30vw;
+        width: 20vw;
+        box-shadow: 0px 0px 10px #aaa;
+    }
+    .sakusei_click{
+        transition: 0.3s;
+        position: fixed;
+        display: inline;
+        padding: 30px 100px 200px;
+        background-color: #fff;
+        border-radius: 20px;
+        width: 40vw;
+        height: 20vh;
+        align-items: center;
+        box-shadow: 0px 0px 10px #aaa;
+        z-index: 50;
+    }
+    .sakusei_kesu{
+        transition: 0.3s;
+        position: fixed;
+        z-index: 100;
+        margin-left: 20vw;
+        margin-top: -3vh;
+        transition: 0.3s;
+        background-color: transparent;
+        border: none;
+        opacity: 0;
+    }
+    .tuika{
+        transition: 0.3s;
+        position: fixed;
+        display: inline;
+        padding: 20px 20px;
+        background-color: #fff;
+        border-radius: 50px;
+        margin-inline-end: -30vw;
+        width: 20vw;
+        box-shadow: 0px 0px 10px #aaa;
+    }
+    .tuika_click{
+        transition: 0.3s;
+        position: fixed;
+        display: inline;
+        padding: 30px 100px 200px;
+        background-color: #fff;
+        border-radius: 20px;
+        width: 40vw;
+        height: 20vh;
+        align-items: center;
+        box-sizing: 0px 0px 10px #aaa;
+        z-index: 50;
+    }
+    .tuika_kesu{
+        transition: 0.3s;
+        position: fixed;
+        z-index: 100;
+        margin-left: 20vw;
+        margin-top: -3vh;
+        transition: 0.3s;
+        background-color: transparent;
+        border: none;
+        opacity: 0;
+    }
+    /*作成用入力*/
+    .sakusei_nyuryoku{
+        margin-top: 0vh;
+        height: 0vh;
+        transform: scale(0);
+    }
+    .sakusei_nyuryoku_click{
+        transition: 0.4s;
+        padding-top: 6vh;
+        padding-bottom: 4vh;
+        height: 10vh;
+        transform: scale(1);
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .sakusei_date{
+        transition: 0.4s;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin-left: 0px;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        flex-direction: column;
+    }
+    .sakusei_han{
+        transition: 0.4s;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin-left: 500px;
+        margin-top: -17vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        -webkit-box-pack: center;
+    }
+    .sakusei_member{
+        transition: 0.4s;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin-left: 500px;
+        margin-top: -10vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sakusei_gidai{
+        transition: 0.4s;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin-left: 500px;
+        margin-top: -5vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .gidai_nyuryoku{
+        display: block;
+        text-align: center;
+        height: 7vh;
+        border: none;
+        margin-top: 30px;
+        padding: 2px;
+        font-size: 110%;
+        color: #666;
+        outline: none;
+        background-color: transparent;
+        border-radius: 20px;
+        box-shadow: 0px 0px 3px rgb(180, 180, 180);
+    }
+
+    /*追加用入力*/
+    .tuika_nyuryoku{
+        margin-top: 0vh;
+        height: 0vh;
+        transform: scale(0);
+    }
+    .tuika_nyuryoku_click{
+        margin-top: 6vh;
+        height: 10vh;
+        transform: scale(1);
+    }
+    /*日付選択*/
+    #datepicker{
+        display: block;
+        text-align: center;
+        height: 7vh;
+        border: none;
+        margin-top: 10px;
+        padding: 2px;
+        font-size: 110%;
+        color: #666;
+        outline: none;
+        background-color: transparent;
+        border-radius: 20px;
+        box-shadow: 0px 0px 3px rgb(180, 180, 180);
+    }
+
+    .sakusei_progress{
+        position: fixed;
+        display: flex;
+        width: 0vw;
+        height: 0vh;
+        transform: scale(0);
+        justify-content: center;
+        padding: 30px 20vw  ;
+        opacity: 0;
+    }
+    .sakusei_progress_click{
+        position: fixed;
+        display: flex;
+        width: 0vw;
+        height: 5vh;
+        transform: scale(1);
+        justify-content: center;
+    }
+    .sakusei_modoru{
+        position: fixed;
+        display: inline;
+        margin-inline-start: -300px;
+        font-size: 150%;
+        padding-top: 30px;
+        background-color: transparent;
+        border: none;
+    }
+    .sakusei_susumu{
+        position: fixed;
+        display: inline;
+        margin-inline-start: 300px;
+        font-size: 150%;
+        padding-top: 30px;
+        background-color: transparent;
+        border: none;
+    }
+    .sakusei_progress_circle{
+        padding-top: 15px ;
+        background-color: transparent;
+        border: none;
+    }
+    circle{
+        stroke-linecap:round;
+    }
+    .progress_susumi{
+        transition: 0.4s;
+        stroke-dasharray: 377;
+        stroke-dashoffset: 187;
+    }
+    .progress_suuji{
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        top: 60px;
+        left: 19.4vw;
+    }
+ 
+}
+@media all and (max-width: 550px){
+    .box{
+        position: relative;
+    }
+    .sakusei{
+        position: relative;
+        display: flex;
+        background-color: #fff;
+    }
+    .tuika{
+        position: relative;
+        display: flex;
+        background-color: #fff;
+    }
+}

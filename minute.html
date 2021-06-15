@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--common-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font-->
+    <link rel="stylesheet" href="https://use.typekit.net/uub0rkv.css">
+    <link rel="stylesheet" href="css/font.css">
+    <!--reset css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/minute.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!--js-->
+    <script type="text/javascript" src="js/font.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/minute.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/overcast/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <!-- <script type="text/javascript">
+    var saku_num = 0
+    function saku_susumu(){
+        if(saku_num == 0){
+            $('.sakusei_date').css({'margin-left':'-=500px'})
+            $('.sakusei_han').css({'margin-left':'-=500px'})
+            $('.progress_susumi').css({'stroke-dashoffset':'-=47.125'})
+            saku_num = 1;
+        }
+        if(saku_num == 1){
+            $('.sakusei_han').css({'margin-left':'-=500px'})
+            $('.sakusei_member').css({'margin-left':'-=500px'})
+        }
+    }
+
+    </script>-->
+
+    <title>議事録</title>
+</head>
+<body>
+    <!--
+    <header id="header">
+        <div class="header_logo">
+            <a href="../logintop/toppage.html">
+                <img src="../../image/TPG_logo.png" width="50vw">
+            </a>
+        </div>
+        <div class="header_nav">
+            <div class="header_nav_portfolio">
+                <a href="../portfolio/toppage.html">
+                    <h2_r>班ポートフォリオ</h2_r>
+                </a>
+            </div>
+            <div class="header_nav_member">
+                <a href="../member/toppage.html">
+                    <h2_r>メンバー</h2_r>
+                </a>
+            </div>
+            <div class="header_nav_minute">
+                <a href="../minute/minute_date.html">
+                    <h2_r>
+                        議事録
+                    </h2_r>
+                </a>
+            </div>
+        </div>
+    </header>
+-->
+    <div class="center">
+        <div class="minute">
+            <h0_b>議事録</h0_b>
+        </div>
+    </div>
+    <div class="center">
+        <div class="box">
+            <div class="sakusei">
+                <h1_r>作成</h1_r> 
+                <button class="sakusei_kesu">
+                    <h0_r>×</h0_r>
+                </button>
+                    <p><h3_r>議事録のテンプレを作成できる</h3_r></p>
+                    <path d="M 20 20 L 320 20" stroke="#202020"/>
+                <!--作成入力-->
+                <form class="sakusei_nyuryoku"　name='sakusei'autocomplete="off">
+                    <div class="sakusei_date">
+                        <h3_r>ミーティング日</h3_r>
+                        <br>
+                        <input type="text" name="sakusei_date" id="datepicker" autocomplete="off"/>
+                    </div>
+                    <div class="sakusei_han">
+                        <h3_r>班選択</h3_r>
+
+
+                    </div>
+                    <div class="sakusei_member">
+                        <h3_r>メンバー選択</h3_r>
+
+                    </div>
+                    <div class="sakusei_gidai">
+                        <h3_r>議題入力</h3_r>
+                        <input type="text" name="sakusei_gidai" class="gidai_nyuryoku" autocomplete="off"/>
+
+                    </div>
+
+                </form>
+                <div class="sakusei_progress">
+                    <button class="sakusei_modoru" onclick="saku_modoru()">
+                        <h3_r>＜</h3_r>
+                    </dbutton>
+                    <button class="sakusei_progress_circle">
+                        <svg width="400" height="400" viewBox="0, 0, 120, 400" style="background: transparent">
+                            <clipPath id="cut-off-bottom">
+                                <rect x="0" y="0" width="200" height="63" />
+                              </clipPath>
+                            <circle cx="66" cy="66" r="60" stroke-width='3' stroke='#aaaaaa' fill="none" opacity='0.2' clip-path="url(#cut-off-bottom)"/>
+                            <circle cx="66" cy="66" r="60" stroke-width='3' stroke='#ff9090' fill="none" class='progress_susumi' clip-path="url(#cut-off-bottom)"/>
+                        </svg>
+                        <div class="progress_suuji"><h2_r>0%</h2_r></div>
+                    </button>
+                    <button class="sakusei_susumu" onclick="saku_susumu()">
+                        <h3_r>＞</h3_r>
+                    </button>
+
+                </div>
+            </div>
+            <div class="tuika">
+                <h1_r>追加</h1_r>
+                <button class="tuika_kesu">
+                    <h0_r>×</h0_r>
+                </button>
+                <p><h3_r>写真などを議事録として追加できる</h3_r></p>
+                <form class="tuika_nyuryoku">
+                    <div class="tuika_date">
+                        <h3_r>ミーティング日</h3_r>
+                        <br>
+                        <input type="text" name="tuika_date" class="minute_date" required/>
+                    </div>
+                    <div class="tuika_han">
+
+                    </div>
+                    <div class="tuika_gidai">
+
+                    </div>
+                </form>
+                <div class="tuika_progress">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+
+body {
+    float:center;
+    margin:0;
+    background-color: #F2F2F2;
+}
+
+#container{
+    margin: auto;
+    padding:20px;
+}
+img.margin_logo{
+    margin: 100px auto 70px;
+    width: 230px;
+}
+@media all and (max-width:700px){
+    .margin_logo{
+        width: 100px;
+    }
+}
+
+/*ログインフォームのエリア内のスタイル*/
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 650px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+ 
+.box{
+    color: white;
+    text-transform: uppercase;
+}
+ 
+.box input[type="text"], .box input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #fff ;
+    background-color: #fff;
+    padding: 8px 10px;
+    outline: none;
+    color: #636363;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-family: fot-tsukuardgothic-std,sans-serif;
+    font-weight: 550;
+    font-size: 1em;
+    box-shadow: 0px 3px 6px #00f930;
+}
+ 
+/* 入力ボックスがフォーカスされたときのスタイル（幅が大きくなる＆枠の色が変わる） */
+.box input[type="text"]:focus, .box input[type="password"]:focus{
+    width: 280px;
+    border-color: #00f930;
+}
+
+/*ID label*/
+input[type="text"]:focus ~ .floating-label_1,
+input:not(:focus):valid ~ .floating-label_1{
+    text-align:center;
+    top: 65px;
+    font-family: fot-tsukuardgothic-std,sans-serif;
+    font-weight: 550;
+    font-size: 0.67em;
+}
+
+
+.floating-label_1 {
+  text-align:center;
+  position: absolute;
+  pointer-events: none;
+  color:#636363;
+  top: 83px;
+  transition: 0.2s ease all;
+  font-family: fot-tsukuardgothic-std,sans-serif;
+  font-weight: 550;
+  font-size: 1em;
+}
+
+/*Password label*/
+input[type="password"]:focus ~ .floating-label_2,
+input:not(:focus):valid ~ .floating-label_2{
+    text-align:center;
+    top: 140px;
+    font-family: fot-tsukuardgothic-std,sans-serif;
+    font-weight: 550;
+    font-size: 0.67em;
+}
+
+.floating-label_2 {
+    text-align:center;
+    position: absolute;
+    pointer-events: none;
+    color:#636363;
+    top: 158px;
+    transition: 0.2s ease all;
+    font-family: fot-tsukuardgothic-std,sans-serif;
+    font-weight: 550;
+    font-size: 1em;
+  }
+
+.inputText {
+  width: 200px;
+  height: 35px;
+  font-family: fot-tsukuardgothic-std,sans-serif;
+  font-weight: 550;
+  font-size: 1em;
+  color: #363636;
+}
+
+span{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+  }
+ 
+/* Loginボタンのスタイル */
+.box input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    padding: 5px 40px;
+    outline: none;
+    color: #636363;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: fot-tsukuardgothic-std,sans-serif;
+    font-weight: 550;
+    font-size: 1.3em;
+    box-shadow: 0px 0px 5px #00f930;
+}
+ 
+/* Loginボタンをマウスオーバーしたときのスタイル */
+.box input[type="submit"]:hover{
+    background: #00f930;
+    color: #ffffff;
+     
+}
+
+p{
+    font-size: 120%;
+}
